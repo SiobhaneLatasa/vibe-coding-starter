@@ -3,13 +3,67 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ma page</title>
+  <meta name="description" content="Le portfolio de Léa Martin, étudiante en design graphique et numérique à Nantes.">
+  <title>Léa Martin — Portfolio design</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <main>
-    <h1>Ma page</h1>
-    <p>Cette page est vide pour l'instant. Demandez à Copilot de la construire avec vous.</p>
+  <header class="topbar">
+    <a class="wordmark" href="#accueil" aria-label="Léa Martin, accueil">LM<span>.</span></a>
+    <p>Portfolio <span aria-hidden="true">/</span> 2026</p>
+    <p class="topbar-location">Nantes, France</p>
+  </header>
+
+  <main id="accueil">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Étudiante en design graphique & numérique</p>
+      <h1 id="page-title">Léa <span>Martin</span></h1>
+      <div class="intro-bottom">
+        <p class="intro-copy">Je crée des identités visuelles et des expériences numériques qui rapprochent les idées des gens.</p>
+        <button class="projects-toggle" id="projects-toggle" type="button" aria-expanded="false" aria-controls="projects">
+          <span class="button-label">Découvrir mes projets</span>
+          <span class="button-icon" aria-hidden="true">+</span>
+        </button>
+      </div>
+      <span class="side-note" aria-hidden="true">Sélection · 2024—26</span>
+    </section>
+
+    <section class="projects" id="projects" aria-labelledby="projects-title" hidden>
+      <div class="section-heading">
+        <h2 id="projects-title">Projets choisis</h2>
+        <span>01 — 03</span>
+      </div>
+      <div class="project-grid">
+        <article class="project project-atelier">
+          <div class="project-art art-atelier" aria-hidden="true">
+            <span class="atelier-sun"></span>
+            <span class="atelier-word">sillage</span>
+            <span class="atelier-caption">PARFUMS BOTANIQUES · 2025</span>
+          </div>
+          <div class="project-meta"><span>Identité visuelle</span><span>01</span></div>
+          <h3>Sillage, parfums botaniques</h3>
+        </article>
+        <article class="project project-revue">
+          <div class="project-art art-revue" aria-hidden="true">
+            <span class="revue-label">REVUE INDÉPENDANTE</span>
+            <span class="revue-word">les<br>voix</span>
+            <span class="revue-stamp">NO 04<br>ÉTÉ 25</span>
+          </div>
+          <div class="project-meta"><span>Édition & typographie</span><span>02</span></div>
+          <h3>Les Voix, revue de quartier</h3>
+        </article>
+        <article class="project project-eau">
+          <div class="project-art art-eau" aria-hidden="true">
+            <span class="eau-orbit eau-orbit-one"></span>
+            <span class="eau-orbit eau-orbit-two"></span>
+            <span class="eau-word">à flot</span>
+            <span class="eau-caption">UNE PAUSE AU BORD DE L’EAU</span>
+          </div>
+          <div class="project-meta"><span>Design d’interface</span><span>03</span></div>
+          <h3>À flot, guide des baignades</h3>
+        </article>
+      </div>
+    </section>
   </main>
   <script src="js/main.js"></script>
 </body>
